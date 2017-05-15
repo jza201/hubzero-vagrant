@@ -18,6 +18,6 @@ Using a Terminal application:
 ## Notes
 When `vagrant up` script is ran, it uses git, composer, and muse. The former two require an internet connection.
 
-A development hub should be up and running on [https://192.168.33.10](https://192.168.33.10).
+A development hub should be up and running on [http://192.168.33.10](http://192.168.33.10).
 You can log into the hub using the `admin` account with the password `vagrant2016`. 
 
