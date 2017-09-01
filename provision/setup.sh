@@ -14,3 +14,9 @@ cd /var/www/public/core
 php bin/composer install
 cd /var/www/public
 php muse migration -i -f
+
+chown vagrant:vagrant /srv
+apt-get -y update
+apt-get -y install clamav
+git config --system user.email "vagrant@hubzero.org"
+git config --system user.name "Vagrant User"

@@ -12,7 +12,7 @@ The original scotch-box documentation can be found here: [https://github.com/sco
 
 ## Installation and Setup
 Using a Terminal application:
- - Run `git clone https://github.com/kevinwojo/hubzero-vagrant`
+ - Run `git clone https://github.com/hubzero/hubzero-vagrant`
  - Within the newly created hubzero-vagrant directory, run `vagrant up`.
 
 ## Notes
