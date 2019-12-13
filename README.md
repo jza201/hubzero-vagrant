@@ -12,8 +12,28 @@ The original scotch-box documentation can be found here: [https://github.com/sco
 
 ## Installation and Setup
 Using a Terminal application:
- - Run `git clone https://github.com/hubzero/hubzero-vagrant`
+ - Run `git clone https://github.com/jza201/hubzero-vagrant`
  - Within the newly created hubzero-vagrant directory, run `vagrant up`.
+
+## Install Radiam Component
+Copy the com_radiam directory to ./public/core/components folder. 
+
+From the command line of vagrant (`vagrant ssh`), initialize the Radiam database objects:
+```
+cd /var/www/hubname
+
+# Dry run, see what will be done:
+php muse migration
+```
+
+That command should list at least three database migrations that will be run: two for the component, one for the module. If it looks OK, you can proceed:
+```
+# Full run this time
+php muse migration -f
+```
+
+Reload vagrant:
+`vagrant reload`
 
 ## Notes
 When `vagrant up` script is ran, it uses git, composer, and muse. The former two require an internet connection.
